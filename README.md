@@ -2,7 +2,7 @@
 👋 Hi there! I'm a Full-Stack Developer<br>I'm passionate about building complete web applications from front to back. I work with modern technologies like React, Next.js, Redux, JavaScript, Python, Flask, and SQL to create dynamic, responsive, and user-friendly applications. Always learning, always building.Lastly aspiring to become a Machine Learning Expert in the Processing....
 
 ## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaafar-abdiwahid-a0b09b338/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:jeyceejeyka635@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaafar-abdiwahid/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:jeyceejeyka635@gmail.com)
 
 # 💻 Tech Stack:
   # FrontEnd
