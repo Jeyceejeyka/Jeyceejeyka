@@ -1,15 +1,39 @@
 <!-- Banner Section -->
-<div align="center">
-  <img src="https://img.freepik.com/free-photo/woman-working-desk-back-view_23-2149713679.jpg" alt="Header Banner" width="100%" height="22%">
+<div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: 20px;">
+  <img src="https://img.freepik.com/free-vector/development-typographic-header-presenting-content-web-pages-website-layout-composition-color-development-idea-computer-technology-flat-vector-illustration_613284-2493.jpg" 
+       alt="Header Banner" 
+       style="width: 100%; object-fit: cover; object-position: center; height: 100%;">
 </div>
 
+
+
+
 <!-- Introduction Section -->
-<div align="center">
-  
-# 💫 About Me
-👋 Hi there! I'm a Full-Stack Developer passionate about building complete web applications from front to back.<br>
-I work with modern technologies like React, Next.js, Redux, JavaScript, Python, Flask, and SQL to create dynamic, responsive, and user-friendly applications.<br>
-Always learning, always building. Aspiring to become a Machine Learning Expert.
+<div align="center" style="padding: 30px; background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); color: #f8fafc; font-family: 'Segoe UI', sans-serif; max-width: 900px; margin: 40px auto;">
+
+  <h1 style="font-size: 2.5rem; font-weight: 900; color: #38bdf8; margin-bottom: 20px;">
+    💫 About Me
+  </h1>
+
+  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
+    👋 Hi! I'm a passionate <span style="color:#facc15; font-weight:900;">Full-Stack Developer</span> who loves creating complete web solutions from concept to deployment.
+  </p>
+
+  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
+    I specialize in modern technologies like <span style="color:#34d399; font-weight:900;">React</span>, <span style="color:#f472b6; font-weight:900;">Next.js</span>, and <span style="color:#a78bfa; font-weight:900;">Python/Flask</span> to build responsive, user-friendly applications.
+  </p>
+
+  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
+    I'm constantly expanding my skills and currently exploring <span style="color:#fb7185; font-weight:900;">Machine Learning</span> to enhance my development capabilities.
+  </p>
+
+  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8;">
+    I believe in writing <span style="color:#38bdf8; font-weight:900;">clean</span>, <span style="color:#34d399; font-weight:900;">efficient</span> code and creating <span style="color:#facc15; font-weight:900;">intuitive experiences</span> that solve real problems. 🚀
+  </p>
+
+  <p style="font-size: 1.3rem; font-weight: 900; color: #f472b6; margin-top: 30px;">
+    Let’s connect and build something amazing together! ✨
+  </p>
 
 </div>
 
@@ -19,7 +43,7 @@ Always learning, always building. Aspiring to become a Machine Learning Expert.
 ## 🌐 Socials
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaafar-abdiwahid/) 
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:jeyceejeyka635@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=react&logoColor=white)](https://your-portfolio-link.com) <!-- Add your portfolio link -->
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=react&logoColor=white)](https://full-stack-portfolio-jade.vercel.app/) <!-- Add your portfolio link -->
 
 </div>
 
@@ -34,7 +58,20 @@ Always learning, always building. Aspiring to become a Machine Learning Expert.
 
 # 🎨 Frontend Development
 
-<p align="left"> <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" /> <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" /> <img src="https://img.shields.io/badge/Redux--Saga-999999?style=for-the-badge&logo=redux-saga&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" /> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white" /> </p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; align-items: center;">
+  <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redux--Saga-999999?style=for-the-badge&logo=redux-saga&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white" />
+</div>
 
 # 🔧 Backend Development
 
@@ -43,8 +80,10 @@ Always learning, always building. Aspiring to become a Machine Learning Expert.
 # 🚀 DevOps & Tools
 
 <p align="left"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" /> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" /> <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" /> </p>
+
 ## 📊 Upcoming Skills
-<p align="left"> <img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" /> <img src="https://img.shields.io/badge/Data_Science-00A98F?style=for-the-badge&logo=python&logoColor=white" /> </p>
+
+<p align="left"> <img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />  </p>
 <br>
 
 <!-- GitHub Stats Section -->
