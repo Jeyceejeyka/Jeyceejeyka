@@ -9,33 +9,27 @@
 
 
 <!-- Introduction Section -->
-<div align="center" style="padding: 30px; background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); color: #f8fafc; font-family: 'Segoe UI', sans-serif; max-width: 900px; margin: 40px auto;">
+<div align="center" style="padding: 35px; background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 18px; box-shadow: 0 10px 35px rgba(0,0,0,0.35); color: #f8fafc; font-family: 'Segoe UI', sans-serif; max-width: 850px; margin: 45px auto;">
 
-  <h1 style="font-size: 2.5rem; font-weight: 900; color: #38bdf8; margin-bottom: 20px;">
+  <h1 style="font-size: 2.6rem; font-weight: 1000; color: #38bdf8; margin-bottom: 20px; letter-spacing: 1px;">
     💫 About Me
   </h1>
 
-  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
-    👋 Hi! I'm a passionate <span style="color:#facc15; font-weight:900;">Full-Stack Developer</span> who loves creating complete web solutions from concept to deployment.
+  <p style="font-size: 1.3rem; font-weight: 900; line-height: 1.9; margin-bottom: 20px;">
+    👋 Hi, I’m <span style="color:#facc15; font-weight:1000;">Jaafar</span>, a passionate <span style="color:#facc15; font-weight:1000;">Full-Stack Developer</span> building scalable, user-focused applications.
   </p>
 
-  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
-    I specialize in modern technologies like <span style="color:#34d399; font-weight:900;">React</span>, <span style="color:#f472b6; font-weight:900;">Next.js</span>, and <span style="color:#a78bfa; font-weight:900;">Python/Flask</span> to build responsive, user-friendly applications.
+  <p style="font-size: 1.3rem; font-weight: bolder; line-height: 1.9; margin-bottom: 20px;">
+    Skilled in <span style="color:#34d399; font-weight:1000;">React</span>, <span style="color:#f472b6; font-weight:1000;">Next.js</span>, and <span style="color:#a78bfa; font-weight:1000;">Flask</span> — I deliver clean, efficient code and intuitive user experiences. 
   </p>
 
-  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8; margin-bottom: 20px;">
-    I'm constantly expanding my skills and currently exploring <span style="color:#fb7185; font-weight:900;">Machine Learning</span> to enhance my development capabilities.
-  </p>
-
-  <p style="font-size: 1.2rem; font-weight: 700; line-height: 1.8;">
-    I believe in writing <span style="color:#38bdf8; font-weight:900;">clean</span>, <span style="color:#34d399; font-weight:900;">efficient</span> code and creating <span style="color:#facc15; font-weight:900;">intuitive experiences</span> that solve real problems. 🚀
-  </p>
-
-  <p style="font-size: 1.3rem; font-weight: 900; color: #f472b6; margin-top: 30px;">
-    Let’s connect and build something amazing together! ✨
+  <p style="font-size: 1.35rem; font-weight: 1000; color: #f472b6; margin-top: 25px;">
+    Let’s build something extraordinary together. ✨
   </p>
 
 </div>
+
+
 
 <!-- Social Links -->
 <div align="center">
@@ -56,7 +50,7 @@
   
 </div>
 
-# 🎨 Frontend Development
+#  Frontend Development
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; align-items: center;">
   <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -73,11 +67,11 @@
   <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white" />
 </div>
 
-# 🔧 Backend Development
+#  Backend Development
 
 <p align="left"> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/SQL_ORM-4479A1?style=for-the-badge" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" /> <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens" /> <img src="https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge" /> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" /> </p>
 
-# 🚀 DevOps & Tools
+#  DevOps & Tools
 
 <p align="left"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" /> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" /> <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" /> </p>
 
@@ -116,7 +110,7 @@
 <br>
 
 <!-- Featured Projects Section -->
-# 🚀 Featured Projects
+#  Featured Projects
 
 <div align="center">
   
