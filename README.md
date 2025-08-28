@@ -16,7 +16,7 @@
   </h1>
 
   <p style="font-size: 1.3rem; font-weight: 900; line-height: 1.9; margin-bottom: 20px;">
-    👋 Hi, I’m <span style="color:#facc15; font-weight:1000;">Jaafar</span>, a passionate <span style="color:#facc15; font-weight:1000;">Full-Stack Developer</span> building scalable, user-focused applications.
+    👋 Hi, I’m <span style="color:#facc15; font-weight:1000;">Jaafar</span>, a passionate <span style="color:#facc15; font-weight:1000;">Full-Stack Software Engineer | Developer</span> building scalable, user-focused applications.
   </p>
 
   <p style="font-size: 1.3rem; font-weight: bolder; line-height: 1.9; margin-bottom: 20px;">
