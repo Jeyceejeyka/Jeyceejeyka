@@ -20,7 +20,7 @@
   </p>
 
   <p style="font-size: 1.3rem; font-weight: bolder; line-height: 1.9; margin-bottom: 20px;">
-    Skilled in <span style="color:#34d399; font-weight:1000;">React</span>, <span style="color:#f472b6; font-weight:1000;">Next.js</span>, and <span style="color:#a78bfa; font-weight:1000;">Flask</span> — I deliver clean, efficient code and intuitive user experiences. 
+    Skilled in <span style="color:#34d399; font-weight:1000;">JavaScript, React</span>, <span style="color:#f472b6; font-weight:1000;">Next.js</span>, and <span style="color:#a78bfa; font-weight:1000;">Python + Libraries</span> — I deliver clean, efficient code and intuitive user experiences. 
   </p>
 
   <p style="font-size: 1.35rem; font-weight: 1000; color: #f472b6; margin-top: 25px;">
