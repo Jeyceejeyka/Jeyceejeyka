@@ -1,9 +1,11 @@
 <!-- Banner Section -->
-<div style="width: 100%; height: 250px; overflow: hidden; position: relative;">
-  <img src="https://img.freepik.com/free-psd/software-engineer-job-template_23-2151842958.jpg?t=st=1756403016~exp=1756406616~hmac=ef63282cbd43742b112d3cc0cd5b6fe80ff864564676ba552703457ca7c7d0d3&w=360" 
+<div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: 30px;">
+  <img src="git-banner2.png" 
        alt="Header Banner" 
-       style="width: 100%; object-fit: cover; object-position: center; height: 100%; border-radius: 20px">
+       style="width: 100%; object-fit: cover; object-position: center; height: 100%; border-radius: 30px;">
 </div>
+
+
 
 
 
