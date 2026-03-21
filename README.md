@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jaafar · Full-Stack Engineer</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -16,28 +16,29 @@
     }
 
     body {
-      background: #ffffff;
+      background: transparent;
       font-family: 'Inter', sans-serif;
-      color: #1a2a3a;
+      color: #1a2c3e;
       line-height: 1.5;
       padding: 2rem 1.5rem;
     }
 
-    /* Main container - clean, no backgrounds */
+    /* Main container - no background, just transparent */
     .profile-container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
-    /* Banner - preserve your image */
-    .banner {
+    /* Banner Section */
+    .banner-wrapper {
       width: 100%;
-      height: 240px;
+      height: 260px;
       overflow: hidden;
-      border-radius: 24px;
+      border-radius: 28px;
       margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
-    .banner img {
+    .banner-wrapper img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -45,307 +46,354 @@
       display: block;
     }
 
-    /* Clean section dividers */
-    .section {
-      margin-bottom: 3rem;
+    /* Clean card style - minimal, no background colors, just subtle borders */
+    .clean-card {
+      background: transparent;
+      border: 1px solid #e9edf2;
+      border-radius: 28px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease;
     }
 
-    .section-title {
-      font-size: 1.5rem;
+    /* Section headers */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 2px solid #eef2f6;
+      padding-bottom: 0.75rem;
+    }
+    .section-header i {
+      font-size: 1.6rem;
+      color: #2c7da0;
+    }
+    .section-header h2 {
+      font-size: 1.6rem;
       font-weight: 600;
-      letter-spacing: -0.02em;
-      color: #11181c;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid #e8edf2;
-      display: inline-block;
+      color: #1f4a6e;
+      letter-spacing: -0.3px;
+      margin: 0;
     }
 
-    /* About card - minimal, no background */
-    .about-card {
+    /* About section */
+    .about-content {
       text-align: center;
-      padding: 1rem 0 1.5rem 0;
+      max-width: 780px;
+      margin: 0 auto;
     }
-    .name {
+    .greeting-badge {
+      display: inline-block;
+      background: #f5f7fa;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #2c7da0;
+      margin-bottom: 1.2rem;
+    }
+    .name-title {
       font-size: 2.8rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #0a1927;
+      color: #1a2c3e;
       margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
     }
-    .title {
+    .role-tag {
       font-size: 1.1rem;
-      font-weight: 500;
-      color: #54708f;
+      color: #5a6e7e;
       margin-bottom: 1.5rem;
+      font-weight: 450;
     }
-    .about-text {
-      max-width: 700px;
-      margin: 0 auto;
+    .bio-text {
       font-size: 1rem;
-      color: #2c3e42;
       line-height: 1.6;
-    }
-    .about-text p {
-      margin-bottom: 0.75rem;
+      color: #2c3e4e;
+      margin-bottom: 1rem;
     }
     .highlight {
+      color: #2c7da0;
       font-weight: 600;
-      color: #2c6e6e;
     }
     .signature {
+      font-size: 1rem;
       font-weight: 500;
-      color: #5b8c8c;
+      color: #3b7c9e;
       margin-top: 1rem;
     }
 
-    /* Social links - minimal */
+    /* Social Links */
     .social-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     .social-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1.25rem;
-      background: #f6f8fa;
-      border-radius: 40px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: #2c5a6e;
-      transition: all 0.2s ease;
+      gap: 10px;
+      padding: 0.6rem 1.4rem;
       border: 1px solid #e2e8f0;
+      border-radius: 60px;
+      text-decoration: none;
+      color: #2c5a7a;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      background: transparent;
     }
     .social-link i {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .social-link:hover {
-      background: #edf2f7;
-      border-color: #cbd5e1;
-      transform: translateY(-1px);
+      border-color: #cbdde6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     }
 
-    /* Tech grid - clean badges */
-    .tech-category {
+    /* Tech stack groups */
+    .tech-group {
       margin-bottom: 1.8rem;
     }
-    .tech-category h3 {
-      font-size: 1rem;
+    .tech-group-title {
       font-weight: 600;
-      color: #2c5a6e;
-      margin-bottom: 0.75rem;
-      letter-spacing: -0.2px;
+      font-size: 1rem;
+      color: #2c7da0;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
-    .badge-group {
+    .tech-badge-list {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
     }
     .tech-badge {
-      background: #f5f7f9;
-      padding: 0.35rem 1rem;
-      border-radius: 30px;
+      background: #f8fafc;
+      border: 1px solid #e4e9ef;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
       font-size: 0.8rem;
       font-weight: 500;
-      color: #2c5a6e;
-      border: 1px solid #e9edf2;
+      color: #2c5f7a;
       transition: all 0.2s;
     }
     .tech-badge i {
-      margin-right: 6px;
+      margin-right: 0.3rem;
       font-size: 0.75rem;
-      color: #5f8b9e;
+      color: #2c7da0;
     }
     .tech-badge:hover {
-      background: #eef2f6;
-      border-color: #d0dce6;
+      background: #ffffff;
+      border-color: #cbdbe0;
     }
 
-    /* Stats grid - clean cards with subtle border */
+    /* Stats grid - clean image cards */
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.2rem;
-      margin-bottom: 1.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
     }
-    .stat-item {
-      border: 1px solid #eef2f6;
-      border-radius: 20px;
-      padding: 0.8rem;
+    .stat-card {
+      border: 1px solid #eef2f8;
+      border-radius: 24px;
+      overflow: hidden;
       background: transparent;
-      transition: all 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .stat-item img {
+    .stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+    }
+    .stat-card img {
       width: 100%;
-      border-radius: 16px;
       display: block;
     }
+
     .double-stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
     }
-    .double-stats > * {
-      flex: 1;
-      min-width: 240px;
+    .trophy-area {
+      margin-top: 1.5rem;
+    }
+    .trophy-area img {
+      width: 100%;
+      border-radius: 20px;
     }
 
-    /* Projects - clean cards */
+    /* Projects - clean minimal cards */
     .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 0.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1rem;
     }
-    .project-card {
-      flex: 1 1 280px;
+    .project-item {
       border: 1px solid #eef2f6;
-      border-radius: 20px;
+      border-radius: 24px;
       padding: 1.5rem;
-      transition: all 0.25s;
+      transition: all 0.2s;
       background: transparent;
     }
-    .project-card:hover {
+    .project-item:hover {
       border-color: #d4e0e8;
-      transform: translateY(-3px);
+      transform: translateY(-4px);
     }
     .project-icon {
-      font-size: 1.8rem;
-      color: #5f8b9e;
+      font-size: 2rem;
+      color: #2c7da0;
       margin-bottom: 1rem;
     }
     .project-title {
-      font-size: 1.2rem;
-      font-weight: 600;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1f4a6e;
       margin-bottom: 0.5rem;
-      color: #1f3b44;
     }
     .project-desc {
       font-size: 0.85rem;
-      color: #5a6f7a;
+      color: #5a6f82;
+      line-height: 1.5;
       margin: 0.6rem 0;
-      line-height: 1.45;
     }
     .project-stack {
+      display: inline-block;
+      background: #f5f8fc;
+      border: 1px solid #e6edf3;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
       font-size: 0.7rem;
       font-weight: 500;
-      background: #f5f7f9;
-      display: inline-block;
-      padding: 0.2rem 0.8rem;
-      border-radius: 20px;
-      color: #4c6f82;
-      letter-spacing: -0.2px;
+      color: #2c7da0;
     }
     .project-link {
       margin-top: 1rem;
       display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #5f8b9e;
       text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2c7da0;
     }
     .project-link i {
       font-size: 0.7rem;
-      margin-left: 4px;
+      transition: transform 0.2s;
     }
-
-    /* Upcoming skills */
-    .upcoming-badge {
-      background: #f5f7f9;
-      border: 1px solid #e9edf2;
-      padding: 0.35rem 1rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #2c5a6e;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* Footer */
-    .footer {
-      text-align: center;
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #eef2f6;
-      font-size: 0.75rem;
-      color: #8aa0ae;
-    }
-    .visit-count {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #f8fafc;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.75rem;
-      border: 1px solid #eef2f6;
+    .project-link:hover i {
+      transform: translateX(3px);
     }
 
     hr {
-      margin: 1.5rem 0;
-      border: none;
-      border-top: 1px solid #eef2f6;
+      margin: 2rem 0 1.5rem;
+      border: 0;
+      height: 1px;
+      background: #e9edf2;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .visit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.4rem 1.2rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      color: #5a6e7e;
+    }
+    .footer-note {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: #8ba0b0;
     }
 
     @media (max-width: 680px) {
-      body { padding: 1.2rem; }
-      .name { font-size: 2rem; }
+      body { padding: 1rem; }
+      .clean-card { padding: 1.2rem; }
+      .name-title { font-size: 2rem; }
+      .section-header h2 { font-size: 1.3rem; }
     }
   </style>
 </head>
 <body>
 <div class="profile-container">
-
-  <!-- Banner Section - your original image preserved -->
-  <div class="banner">
-    <img src="git-banner2.png" alt="Header Banner" onerror="this.onerror=null; this.src='https://placehold.co/1200x300/f8fafc/8ba0ae?text=Jaafar+·+Full+Stack'">
+  
+  <!-- Banner Image (exactly as original) -->
+  <div class="banner-wrapper">
+    <img src="git-banner2.png" alt="Header Banner" onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x260/eef2f6/8ba0b0?text=Jaafar+·+Full+Stack+Engineer'">
   </div>
 
-  <!-- About Section - clean, no background -->
-  <div class="section">
-    <div class="about-card">
-      <h1 class="name">Jaafar Abdiwahid</h1>
-      <div class="title">Full-Stack Software Engineer · Creative Developer</div>
-      <div class="about-text">
-        <p>👋 Hi, I'm <span class="highlight">Jaafar</span>, a passionate Full-Stack Engineer building scalable, user-focused applications with clean code and thoughtful design.</p>
-        <p>Skilled in <span class="highlight">JavaScript, React, Next.js</span>, and <span class="highlight">Python ecosystems</span> — I deliver efficient backend systems and intuitive frontend experiences.</p>
-        <p class="signature">✨ Let's build something extraordinary together.</p>
+  <!-- About Me Section - Clean, no background -->
+  <div class="clean-card">
+    <div class="about-content">
+      <div class="greeting-badge">
+        <i class="fas fa-smile" style="margin-right: 4px;"></i> About Me
       </div>
+      <h1 class="name-title">Jaafar Abdiwahid</h1>
+      <div class="role-tag">Full-Stack Software Engineer · Creator · Problem Solver</div>
+      <p class="bio-text">
+        👋 Hi, I'm <span class="highlight">Jaafar</span>, a passionate Full-Stack Developer building scalable, 
+        user-focused applications that blend performance with elegant design.
+      </p>
+      <p class="bio-text">
+        Skilled in <span class="highlight">JavaScript, React, Next.js</span>, and <span class="highlight">Python ecosystems</span> — 
+        I deliver clean, efficient code and intuitive user experiences.
+      </p>
+      <p class="signature">
+        ✨ Let's build something extraordinary together.
+      </p>
     </div>
   </div>
 
-  <!-- Social Links -->
-  <div class="section">
+  <!-- Social Links Section -->
+  <div class="clean-card">
+    <div class="section-header">
+      <i class="fas fa-share-alt"></i>
+      <h2>Connect</h2>
+    </div>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/jaafar-abdiwahid/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-      <a href="mailto:jeyceejeyka635@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://full-stack-portfolio-jade.vercel.app/" target="_blank" class="social-link"><i class="fas fa-globe"></i> Portfolio</a>
-      <a href="https://github.com/Jeyceejeyka" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/jaafar-abdiwahid/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="mailto:jeyceejeyka635@gmail.com" class="social-link">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://full-stack-portfolio-jade.vercel.app/" target="_blank" class="social-link">
+        <i class="fas fa-globe"></i> Portfolio
+      </a>
+      <a href="https://github.com/Jeyceejeyka" target="_blank" class="social-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
     </div>
   </div>
 
-  <!-- Tech Stack Section - minimal badges -->
-  <div class="section">
-    <h2 class="section-title">Tech Stack</h2>
+  <!-- Tech Stack Section -->
+  <div class="clean-card">
+    <div class="section-header">
+      <i class="fas fa-code"></i>
+      <h2>Tech Stack</h2>
+    </div>
     
-    <div class="tech-category">
-      <h3>Frontend</h3>
-      <div class="badge-group">
+    <div class="tech-group">
+      <div class="tech-group-title"><i class="fas fa-paintbrush-fine"></i> Frontend</div>
+      <div class="tech-badge-list">
         <span class="tech-badge"><i class="fab fa-react"></i> React</span>
         <span class="tech-badge"><i class="fab fa-js"></i> Next.js</span>
-        <span class="tech-badge"><i class="fas fa-layer-group"></i> Redux</span>
+        <span class="tech-badge"><i class="fas fa-box"></i> Redux</span>
         <span class="tech-badge"><i class="fas fa-code-branch"></i> Redux-Saga</span>
-        <span class="tech-badge"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
-        <span class="tech-badge"><i class="fas fa-code"></i> jQuery</span>
-        <span class="tech-badge"><i class="fab fa-html5"></i> HTML5/CSS3</span>
+        <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="tech-badge"><i class="fas fa-terminal"></i> jQuery</span>
+        <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+        <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
         <span class="tech-badge"><i class="fab fa-sass"></i> SASS</span>
         <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
         <span class="tech-badge"><i class="fas fa-wind"></i> TailwindCSS</span>
@@ -353,23 +401,23 @@
       </div>
     </div>
 
-    <div class="tech-category">
-      <h3>Backend & Databases</h3>
-      <div class="badge-group">
+    <div class="tech-group">
+      <div class="tech-group-title"><i class="fas fa-server"></i> Backend & Databases</div>
+      <div class="tech-badge-list">
         <span class="tech-badge"><i class="fas fa-flask"></i> Flask</span>
         <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
         <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
-        <span class="tech-badge"><i class="fas fa-database"></i> SQLAlchemy</span>
+        <span class="tech-badge"><i class="fas fa-table"></i> SQLAlchemy</span>
         <span class="tech-badge"><i class="fas fa-database"></i> SQLite</span>
-        <span class="tech-badge"><i class="fas fa-key"></i> JWT</span>
-        <span class="tech-badge"><i class="fas fa-cloud-upload-alt"></i> REST API</span>
-        <span class="tech-badge"><i class="fas fa-exchange-alt"></i> Axios</span>
+        <span class="tech-badge"><i class="fas fa-lock"></i> JWT</span>
+        <span class="tech-badge"><i class="fas fa-link"></i> REST API</span>
+        <span class="tech-badge"><i class="fas fa-cloud-upload-alt"></i> Axios</span>
       </div>
     </div>
 
-    <div class="tech-category">
-      <h3>DevOps & Tools</h3>
-      <div class="badge-group">
+    <div class="tech-group">
+      <div class="tech-group-title"><i class="fas fa-tools"></i> DevOps & Tools</div>
+      <div class="tech-badge-list">
         <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
         <span class="tech-badge"><i class="fas fa-sync-alt"></i> CI/CD</span>
         <span class="tech-badge"><i class="fab fa-git-alt"></i> Git/GitHub</span>
@@ -378,93 +426,105 @@
       </div>
     </div>
 
-    <div class="tech-category">
-      <h3>📚 Upcoming Skills</h3>
-      <div class="badge-group">
-        <span class="upcoming-badge"><i class="fas fa-brain"></i> Machine Learning</span>
-        <span class="upcoming-badge"><i class="fas fa-chart-network"></i> TensorFlow</span>
+    <div class="tech-group">
+      <div class="tech-group-title"><i class="fas fa-chart-line"></i> Upcoming</div>
+      <div class="tech-badge-list">
+        <span class="tech-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+        <span class="tech-badge"><i class="fas fa-chart-network"></i> TensorFlow</span>
       </div>
     </div>
   </div>
 
-  <!-- GitHub Analytics - clean, transparent cards -->
-  <div class="section">
-    <h2 class="section-title">GitHub Analytics</h2>
+  <!-- GitHub Analytics Section -->
+  <div class="clean-card">
+    <div class="section-header">
+      <i class="fab fa-github-alt"></i>
+      <h2>GitHub Analytics</h2>
+    </div>
+    
     <div class="stats-grid">
-      <div class="stat-item">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jeyceejeyka&theme=default" alt="profile details">
+      <div class="stat-card">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jeyceejeyka&theme=default" alt="GitHub Profile Details">
       </div>
-      <div class="stat-item">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jeyceejeyka&theme=default" alt="repos per language">
+      <div class="stat-card">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jeyceejeyka&theme=default" alt="Repos per language">
       </div>
-      <div class="stat-item">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jeyceejeyka&theme=default" alt="most commit language">
+      <div class="stat-card">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jeyceejeyka&theme=default" alt="Most commit language">
       </div>
-      <div class="stat-item">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jeyceejeyka&theme=default" alt="stats">
+      <div class="stat-card">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jeyceejeyka&theme=default" alt="GitHub Stats">
       </div>
-      <div class="stat-item">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jeyceejeyka&theme=default&utcOffset=0" alt="productive time">
-      </div>
-    </div>
-
-    <div class="double-stats">
-      <div class="stat-item">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jeyceejeyka&theme=default&hide_border=true&background=FFFFFF&stroke=E2E8F0&ring=5f8b9e&fire=CC9966" alt="streak stats">
-      </div>
-      <div class="stat-item">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jeyceejeyka&theme=minimal&bg_color=ffffff&color=3b6e8b&line=5f8b9e&point=8aaec2&area=true&hide_border=true" alt="activity graph">
+      <div class="stat-card">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jeyceejeyka&theme=default&utcOffset=0" alt="Productive time">
       </div>
     </div>
 
     <div class="double-stats">
-      <div class="stat-item">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeyceejeyka&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=2c5a6e&text_color=4a6f82" alt="top languages">
+      <div class="stat-card">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jeyceejeyka&theme=default&hide_border=true&background=FFFFFF&ring=2c7da0&fire=ffb347&currStreakNum=2c5f7a" alt="GitHub Streak">
       </div>
-      <div class="stat-item">
-        <img src="https://github-profile-trophy.vercel.app/?username=Jeyceejeyka&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=2&column=4&title_color=5f8b9e" alt="trophy case">
+      <div class="stat-card">
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jeyceejeyka&theme=minimal&bg_color=FFFFFF&color=2c5f7a&line=2c7da0&point=5f8b9f&hide_border=true" alt="Activity Graph">
+      </div>
+    </div>
+
+    <div class="double-stats">
+      <div class="stat-card">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeyceejeyka&layout=compact&theme=default&hide_border=true&bg_color=FFFFFF&title_color=1f4a6e&text_color=2c5f7a" alt="Top Languages">
+      </div>
+      <div class="stat-card trophy-area">
+        <img src="https://github-profile-trophy.vercel.app/?username=Jeyceejeyka&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=2&column=4&title_color=2c7da0" alt="GitHub Trophies">
       </div>
     </div>
   </div>
 
   <!-- Featured Projects -->
-  <div class="section">
-    <h2 class="section-title">Featured Projects</h2>
+  <div class="clean-card">
+    <div class="section-header">
+      <i class="fas fa-star"></i>
+      <h2>Featured Projects</h2>
+    </div>
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-item">
         <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
         <div class="project-title">Elysian Market</div>
-        <div class="project-desc">Full-stack e-commerce platform with user auth, cart system, and order tracking.</div>
+        <div class="project-desc">Full-stack e-commerce platform with secure user authentication, cart, and order management.</div>
         <span class="project-stack">React · Flask · PostgreSQL</span>
         <div><a href="https://github.com/Jeyceejeyka/project1" class="project-link">View project <i class="fas fa-arrow-right"></i></a></div>
       </div>
-      <div class="project-card">
+      <div class="project-item">
         <div class="project-icon"><i class="fas fa-comments"></i></div>
         <div class="project-title">Chroma Chat</div>
-        <div class="project-desc">Real-time chat application with rooms, typing indicators, and WebSocket connection.</div>
-        <span class="project-stack">Next.js · Socket.io · Tailwind</span>
+        <div class="project-desc">Real-time chat application with WebSockets, room support, and typing indicators.</div>
+        <span class="project-stack">Next.js · Socket.io · TailwindCSS</span>
         <div><a href="https://github.com/Jeyceejeyka/project2" class="project-link">View project <i class="fas fa-arrow-right"></i></a></div>
       </div>
-      <div class="project-card">
+      <div class="project-item">
         <div class="project-icon"><i class="fas fa-chart-simple"></i></div>
         <div class="project-title">Insightify</div>
-        <div class="project-desc">Interactive data visualization dashboard for analytics and business metrics.</div>
+        <div class="project-desc">Data visualization dashboard for business analytics with interactive charts.</div>
         <span class="project-stack">React · Chart.js · Python</span>
         <div><a href="https://github.com/Jeyceejeyka/project3" class="project-link">View project <i class="fas fa-arrow-right"></i></a></div>
       </div>
     </div>
+    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">
+      <i class="fab fa-github"></i> Explore more on <a href="https://github.com/Jeyceejeyka" style="color:#2c7da0; text-decoration: none;">github.com/Jeyceejeyka</a>
+    </p>
   </div>
 
-  <!-- Footer with visit counter -->
+  <!-- Footer -->
+  <hr>
   <div class="footer">
-    <div class="visit-count">
+    <div class="visit-badge">
       <i class="fas fa-eye"></i>
-      <img src="https://visitcount.itsvg.in/api?id=Jeyceejeyka&icon=0&color=1" alt="visit counter" style="height: 18px; vertical-align: middle;">
+      <img src="https://visitcount.itsvg.in/api?id=Jeyceejeyka&icon=0&color=1" alt="visit counter" style="height: 18px;">
       <span>profile views</span>
     </div>
-    <div style="margin-top: 1rem;">✧ built with clarity & purpose ✧</div>
+    <div class="footer-note">
+      <i class="far fa-copyright"></i> Jaafar Abdiwahid · Full-Stack Engineer
+    </div>
   </div>
-
 </div>
 </body>
 </html>
