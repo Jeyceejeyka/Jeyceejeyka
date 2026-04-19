@@ -9,21 +9,15 @@
 <div align="center">
 
 ## 💫 About Me
-
 <div style="border-radius:16px; padding:20px; background-color:#0d1117; border:1px solid #30363d; max-width:800px;">
-
 👋 Hi, I’m <b style="color:#facc15;">Jaafar</b>  
 <b>Full-Stack Software Engineer</b> building scalable, user-focused applications.
-
-<br><br>
 
 💡 Skilled in  
 <span style="color:#58a6ff;">JavaScript</span> · 
 <span style="color:#22c55e;">React</span> · 
 <span style="color:#a855f7;">Next.js</span> · 
 <span style="color:#f97316;">Python</span>
-
-<br><br>
 
 <b style="color:#facc15;">✨ Let’s build something extraordinary together.</b>
 
